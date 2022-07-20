@@ -102,8 +102,8 @@ intro here */
 }
 
 .logo_ {
-    padding: 8px;
-    float: left;
+    position: absolute;
+    left: 30px;
 }
 
 
@@ -1456,7 +1456,7 @@ font-family: 'Montserrat', sans-serif;
     font-size: 22px;
   }
   .logo_{
-    margin-inline-end: 10px;
+    left: 20px;
   }
 
   #hamburger-icon {
