@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  	--img-url: url(Pic2.jpeg);
+  	--img-url: url(/Pictures/Pic2.jpeg);
   background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,9 +25,9 @@ body, html {
 /* 
 intro here */
 .bg {
-  background-image: url("Pic1.jpeg");
+  background-image: url("/Pictures/Pic1.jpeg");
   height: 100%; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)) , url(Pic1.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)) , url(/Pictures/Pic1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,21 +47,25 @@ intro here */
 	background-size: cover;
 	box-sizing: border-box;
 	border-radius: 50%;
+  animation: fadeIn 2s;
 	background-image: var(--img-url), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
    -webkit-transition: -webkit-transform .8s ease-in-out;
           transition: transform .8s ease-in-out;
 }
+
 
 .Prof img:hover{
    -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
+
 .caption {
   position: absolute;
   inset-inline-start: 0;
   inset-block-start: 50%;
   width: 100%;
+  animation: fadeIn 2s;
   text-align: center;
   color: #000;
 }
@@ -86,7 +90,10 @@ intro here */
   letter-spacing: 1px;
 }
 
-
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 
 
@@ -597,13 +604,13 @@ transition: all .2s ease-in-out;
 }
 
 .pro1-img{
-  background-image: url(project-1.jpeg);
+  background-image: url(/Pictures/project-1.jpeg);
 }
 .pro2-img{
-  background-image: url(project-2.jpeg);
+  background-image: url(/Pictures/project-2.jpeg);
 }
 .pro3-img{
-  background-image: url(bank.jpg);
+  background-image: url(/Pictures/bank.jpg);
 }
 
 .projects-intro{
@@ -774,13 +781,13 @@ perspective: 1000px;
 }
 
 .act1-img{
-  background-image: url(act-1.jpeg);
+  background-image: url(/Pictures/act-1.jpeg);
 }
 .act2-img{
-  background-image: url(act-2.jpeg);
+  background-image: url(/Pictures/act-2.jpeg);
 }
 .act3-img{
-  background-image: url(act-3.jpeg);
+  background-image: url(/Pictures/act-3.jpeg);
 }
 
 
