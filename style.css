@@ -4,7 +4,7 @@ body, html {
   	--img-url: url(/Pictures/Pic2.jpeg);
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   overflow-x: hidden;
 }
 
@@ -49,8 +49,8 @@ intro here */
 	box-sizing: border-box;
 	border-radius: 50%;
 	background-image: var(--img-url), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
-   -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
 }
 
 
@@ -61,15 +61,16 @@ intro here */
 
 
 .caption {
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 50%;
+  position: relative;
+  display: block;
   width: 100%;
+  margin-top: 50px; 
   text-align: center;
-  color: #000;
+  color: #000000;
 }
 
-.caption span.border {
+.border {
+  display: block;
   color: #fff;
   padding: 18px;
   font-size: 26px;
@@ -77,13 +78,11 @@ intro here */
   letter-spacing: 2px;
 }
 
-.caption span.border-2 {
-  position: absolute;
-  inset-inline-start: 0;
-  inset-block-start: 50%;
+.border-2 {
+  position: relative;
+  display: block;
   width: 100%;
   color: #e3e0d8;
-  padding-block-start: 25px;
   font-size: 19px;
   font-family: 'Cormorant Garamond', 'Oxygen', serif;
   letter-spacing: 1px;
@@ -1607,9 +1606,6 @@ text-decoration: none;
     .Prof img{
       height: 24%;
       margin-block-start: 10%;
-    }
-    .caption{
-      inset-block-start: 50%;
     }
     
     .caption span.border {

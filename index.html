@@ -18,40 +18,45 @@
 </head>
 <body>
 <div class="bg">
-<nav>
-<ul>
-	<li class="logo_"><a class="logo" alt="Home page Link" href="./index.html">Darling</a></li>
-	<li class="l"><a class="link" href="./index.html" id="active" alt="Home page Link">Home</a></li>
-	<li class="l"><a class="link" href="./projects.html" alt="Projects page Link">Projects</a></li>
-	<li class="l"><a class="link" href="./resume.html" alt="Resume page Link">Resume</a></li>
-	<li class="l"><a class="link" href="./contact.html" alt="Contact page Link">Contact</a></li>
-	<li class="hbi">
-		<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-			<ul class="mobile-menu">
-				<li><a class="hb-links" href="./index.html" id="active" alt="Home page Link">Home</a></li>
-				<li><a class="hb-links" href="./projects.html" alt="Projects page Link">Projects</a></li>
-				<li><a class="hb-links" href="./resume.html" alt="Resume page Link">Resume</a></li>
-				<li><a class="hb-links" href="./contact.html" alt="Contact page Link">Contact</a></li>
-			  </ul>
-		</div>
-	</li>
-</ul>
+	<nav>
+		<ul>
+			<li class="logo_"><a class="logo" alt="Home page Link" href="./index.html">Darling</a></li>
+			<li class="l"><a class="link" href="./index.html" id="active" alt="Home page Link">Home</a></li>
+			<li class="l"><a class="link" href="./projects.html" alt="Projects page Link">Projects</a></li>
+			<li class="l"><a class="link" href="./resume.html" alt="Resume page Link">Resume</a></li>
+			<li class="l"><a class="link" href="./contact.html" alt="Contact page Link">Contact</a></li>
+			<li class="hbi">
+				<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					<ul class="mobile-menu">
+						<li><a class="hb-links" href="./index.html" id="active" alt="Home page Link">Home</a></li>
+						<li><a class="hb-links" href="./projects.html" alt="Projects page Link">Projects</a></li>
+						<li><a class="hb-links" href="./resume.html" alt="Resume page Link">Resume</a></li>
+						<li><a class="hb-links" href="./contact.html" alt="Contact page Link">Contact</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
 
+	<script>
+		function toggleMobileMenu(menu) {
+    		menu.classList.toggle('open');}
+	</script>
 
-</nav>
-<script>
-	function toggleMobileMenu(menu) {
-    menu.classList.toggle('open');}
-</script>
-<span class="Prof fade-in">
-	<img alt="Professional Profile Picture " src="/Pictures/Pic2.jpeg"/>
-	<div class="caption"><span class="border ">Hi! I&#39;m Darling</span><br />
-		<span class="border-2">Website Designer | Programmer</span></div>
+	<span class="Prof">
+		<img alt="Professional Profile Picture " src="/Pictures/Pic2.jpeg"/>
+		<div class="caption">
+			<div class="border">Hi! I&#39;m Darling</div>
+
+			<div class="border-2">Website Designer | Programmer</div>
 		</div>
-</span>
+	</span>
+
+</div>
+	
 
 
 
